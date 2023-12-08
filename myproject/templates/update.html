@@ -1,0 +1,17 @@
+<h1>Update Home</h1>
+<form action="updaterecords/{{myhome.id}}"method="post">
+    {% csrf_token %}
+Name:<br>
+<input name="name" value="{{myhome.name}}">
+<br><br>
+Mobile Number:<br>
+<input name="mobilenumber" value="{{myhome.mobilenumber}}">
+<br><br>
+Email:<br>
+<input name="email" value="{{myhome.email}}">
+<br><br>
+Area:<br>
+<input name="area" value="{{myhome.area}}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
